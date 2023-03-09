@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203D1A6B29B9FE6000AEA629 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 203D1A6A29B9FE6000AEA629 /* GoogleService-Info.plist */; };
 		207478D529B8B6200045922A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207478D429B8B6200045922A /* AppDelegate.swift */; };
 		207478D729B8B6200045922A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207478D629B8B6200045922A /* SceneDelegate.swift */; };
 		207478D929B8B6200045922A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207478D829B8B6200045922A /* LoginViewController.swift */; };
@@ -14,9 +15,11 @@
 		207478DE29B8B6220045922A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207478DD29B8B6220045922A /* Assets.xcassets */; };
 		207478E129B8B6220045922A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207478DF29B8B6220045922A /* LaunchScreen.storyboard */; };
 		207478E929B8F88D0045922A /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207478E829B8F88D0045922A /* TasksViewController.swift */; };
+		8D2E7DA810755B67540982C3 /* Pods_ToDoFIRE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784DE95BC1C02D56DDB716AB /* Pods_ToDoFIRE.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		203D1A6A29B9FE6000AEA629 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		207478D129B8B6200045922A /* ToDoFIRE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoFIRE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207478D429B8B6200045922A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		207478D629B8B6200045922A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		207478E029B8B6220045922A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		207478E229B8B6220045922A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		207478E829B8F88D0045922A /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
+		515B6F98860744E227616BC9 /* Pods-ToDoFIRE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoFIRE.release.xcconfig"; path = "Target Support Files/Pods-ToDoFIRE/Pods-ToDoFIRE.release.xcconfig"; sourceTree = "<group>"; };
+		784DE95BC1C02D56DDB716AB /* Pods_ToDoFIRE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoFIRE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9949C9E69409AABF60E58B /* Pods-ToDoFIRE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoFIRE.debug.xcconfig"; path = "Target Support Files/Pods-ToDoFIRE/Pods-ToDoFIRE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2E7DA810755B67540982C3 /* Pods_ToDoFIRE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				207478D329B8B6200045922A /* ToDoFIRE */,
 				207478D229B8B6200045922A /* Products */,
+				D8B87505B79568AFEF59E411 /* Pods */,
+				6BD71C12CDAB6D89A5B5E58F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +82,7 @@
 				207478DD29B8B6220045922A /* Assets.xcassets */,
 				207478DF29B8B6220045922A /* LaunchScreen.storyboard */,
 				207478E229B8B6220045922A /* Info.plist */,
+				203D1A6A29B9FE6000AEA629 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -86,6 +96,24 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		6BD71C12CDAB6D89A5B5E58F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784DE95BC1C02D56DDB716AB /* Pods_ToDoFIRE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8B87505B79568AFEF59E411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF9949C9E69409AABF60E58B /* Pods-ToDoFIRE.debug.xcconfig */,
+				515B6F98860744E227616BC9 /* Pods-ToDoFIRE.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 207478E529B8B6220045922A /* Build configuration list for PBXNativeTarget "ToDoFIRE" */;
 			buildPhases = (
+				2297FD47F193CB937A1E81E4 /* [CP] Check Pods Manifest.lock */,
 				207478CD29B8B6200045922A /* Sources */,
 				207478CE29B8B6200045922A /* Frameworks */,
 				207478CF29B8B6200045922A /* Resources */,
+				AAC093C336705022C8E71997 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,12 +175,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				207478E129B8B6220045922A /* LaunchScreen.storyboard in Resources */,
+				203D1A6B29B9FE6000AEA629 /* GoogleService-Info.plist in Resources */,
 				207478DE29B8B6220045922A /* Assets.xcassets in Resources */,
 				207478DC29B8B6200045922A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2297FD47F193CB937A1E81E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToDoFIRE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAC093C336705022C8E71997 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoFIRE/Pods-ToDoFIRE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToDoFIRE/Pods-ToDoFIRE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToDoFIRE/Pods-ToDoFIRE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		207478CD29B8B6200045922A /* Sources */ = {
@@ -302,6 +375,7 @@
 		};
 		207478E629B8B6220045922A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9949C9E69409AABF60E58B /* Pods-ToDoFIRE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +404,7 @@
 		};
 		207478E729B8B6220045922A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515B6F98860744E227616BC9 /* Pods-ToDoFIRE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

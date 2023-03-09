@@ -16,7 +16,17 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(kbDidShow), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(kbDidHide), name: UIResponder.keyboardDidHideNotification, object: nil)
+    }
+    
+    @objc func kbDidShow(notification: Notification) {
+        
+    }
+    
+    @objc func kbDidHide() {
+        
     }
 
     @IBAction func loginTapped(_ sender: UIButton) {
