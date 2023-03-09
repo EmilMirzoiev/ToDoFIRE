@@ -12,7 +12,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ToDoFIRE" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIScrollView">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -74,7 +74,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOg-9h-Fv2"/>
-                                                    <segue destination="uyK-ud-Yh7" kind="show" identifier="tasksSegue" id="aEm-1a-AP7"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ev-Xr-m89">
@@ -119,7 +118,8 @@
                     <connections>
                         <outlet property="emailTextField" destination="1ki-hx-gG4" id="shc-r8-xs1"/>
                         <outlet property="passwordTextField" destination="1jc-e2-oy4" id="dat-sC-cht"/>
-                        <outlet property="warnLabel" destination="uyh-p2-4dH" id="Egv-7A-toB"/>
+                        <outlet property="warnLabel" destination="6b6-Us-H6g" id="z5p-zY-9wL"/>
+                        <segue destination="uyK-ud-Yh7" kind="show" identifier="tasksSegue" id="Yek-T0-dcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,6 +165,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="bMR-8Z-xmQ">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="kTA-A9-Pv7">
+                            <connections>
+                                <action selector="signOutTapped:" destination="0Ej-xF-Ore" id="XAa-YV-Km5"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="T5E-3m-Pn3">
                             <connections>
                                 <action selector="addTapped:" destination="0Ej-xF-Ore" id="bOj-XU-rIr"/>
