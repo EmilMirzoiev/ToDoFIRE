@@ -38,6 +38,11 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         })
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        ref?.removeAllObservers()
+    }
+    
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
         let alertController = UIAlertController(title: "New Task", message: "Add new text", preferredStyle: .alert)
         alertController.addTextField()
