@@ -10,6 +10,8 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    var ref: DatabaseReference!
+    
     @IBOutlet weak var warnLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -17,6 +19,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ref = Database.database().reference(withPath: "users")
         prepareUI()
         CheckIfUserLogged()
     }
@@ -86,16 +89,12 @@ class LoginViewController: UIViewController {
                 return
             }
         
-        Auth.auth().createUser(withEmail: email, password: password) { user, error in
-            if error == nil {
-                if user != nil {
-                    
-                } else {
-                    print("user is not created")
-                }
-            } else {
-                print(error!.localizedDescription)
-            }
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] user, error in
+            
+            guard error == nil, user != nil else { print(error!.localizedDescription); return }
+            
+            let userRef = self?.ref.child((user?.user.uid)!)
+            userRef?.setValue(["email": user?.user.email])
         }
     }
     
